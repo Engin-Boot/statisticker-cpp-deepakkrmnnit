@@ -1,7 +1,7 @@
 #include "stats.h"
 
 Stats Statistics::ComputeStatistics(const std::vector<float>& array) {
-    if(array.size==0)
+    if(array.size()==0)
     {
         Stats s;
         s.average=0.0;
