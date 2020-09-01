@@ -1,7 +1,7 @@
 #include <vector>
 //
 #include<iostream>
-struct stats
+struct Stats
 {
     float average;
     float max;
@@ -29,7 +29,7 @@ namespace Statistics {
                 min=a[i];
             }   
         }
-        stats s;
+        Stats s;
         s.average=sum/count;
         s.max=max;
         s.min=min;
