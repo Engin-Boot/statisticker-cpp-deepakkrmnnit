@@ -2,16 +2,12 @@
 
 Stats Statistics::ComputeStatistics(const std::vector<float>& array) {
    
-        Stats s;
-        s.average=0.0;
-        s.max=0.0;
-        s.min=0.0;
-        float sum=0;
-        int count=0;
-        float max=0;
-        float min=0;
-        for(unsigned int i=0;i<array.size();i++)
+        
+        
+        if(array.size()>0)
         {
+           for(unsigned int i=0;i<array.size();i++)
+           {
             sum=sum+array[i];
             count++;
             if(array[i]>max)
@@ -22,9 +18,19 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& array) {
             {
                 min=array[i];
             }   
-        }
-        s.average=sum/count;
+              float sum=0;
+        int count=0;
+        float max=0;
+        float min=0;
+           }
+            Stats s;
+           s.average=sum/count;
         s.max=max;
         s.min=min;
         return s;
+        }
+        Stats s;
+        s.average=0.0;
+        s.max=0.0;
+        s.min=0.0;
 }
