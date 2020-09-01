@@ -20,7 +20,7 @@ float maxOfArray(const std::vector<float>& array)
             max = array[i];
         }
     }
-    return Max;
+    return max;
 }
 float minOfArray(const std::vector<float>& array)
 {
