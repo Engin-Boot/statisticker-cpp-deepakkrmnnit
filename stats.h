@@ -9,7 +9,7 @@ struct Stats
     
 };
 //
-Stats arraySizeGreaterThanZero(const std::vector<float>&)
+Stats arraySizeGreaterThanZero(const std::vector<float>&array)
 {
     float sum = 0;
     int count = 0;
