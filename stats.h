@@ -16,17 +16,17 @@ namespace Statistics {
         int count=0;
         float max=array[0];
         float min=array[0];
-        for(int i=0;i<array.size();i++)
+        for(unsigned int i=0;i<array.size();i++)
         {
             sum=sum+array[i];
             count++;
-            if(a[i]>max)
+            if(array[i]>max)
             {
-                max=a[i];
+                max=array[i];
             }
-            if(a[i]<min)
+            if(array[i]<min)
             {
-                min=a[i];
+                min=array[i];
             }   
         }
         Stats s;
