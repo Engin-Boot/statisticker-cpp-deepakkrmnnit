@@ -6,6 +6,10 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& array) {
         
         if(array.size()>0)
         {
+            float sum=0;
+        int count=0;
+        float max=0;
+        float min=0;
            for(unsigned int i=0;i<array.size();i++)
            {
             sum=sum+array[i];
@@ -18,10 +22,7 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& array) {
             {
                 min=array[i];
             }   
-              float sum=0;
-        int count=0;
-        float max=0;
-        float min=0;
+             
            }
             Stats s;
            s.average=sum/count;
